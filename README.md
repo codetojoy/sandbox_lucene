@@ -1,2 +1,4 @@
-# sandbox_lucene
-various examples in Lucene
+
+### sandbox_lucene
+
+* various examples in Lucene
