@@ -1,0 +1,20 @@
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'net.codetojoy.lucene.example.Runner'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.apache.lucene:lucene-core:8.2.0'
+    implementation 'org.apache.lucene:lucene-analyzers-common:8.2.0'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+run {
+    args "${projectDir}/resources/data.txt"
+}
